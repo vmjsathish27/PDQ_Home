@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PDQ's</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.27.0/feather.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.27.0/feather.js.map">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.27.0/feather.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.27.0/feather.min.js.map">
+  
+
+	
+</head>
+
+<body>
+<!-- Trigger the modal with a button -->
+<button title="Get in Touch" data-toggle="modal" data-target="#myBtn" class="hidden-xs myBtnD" onclick="titleModal('Get in Touch');" style="display: block;">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+ Get in Touch</button>
+<button title="Get in Touch" data-toggle="modal" data-target="#myBtn" class="visible-xs myBtn" onclick="titleModal('Get in Touch');"><span class="icon-call"> </span> </button>
+
+
+
+<!-- Modal -->
+<div id="myBtn" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title">GET IN TOUCH</h2>
+      </div>
+      <div class="modal-body">
+		
+			<form action="/action_page.php">
+				<div class="form-group">
+				  <label for="uname">Your Name:</label>
+				  <input type="text" class="form-control" id="uname" placeholder="Enter Your Name*" name="uname" required>
+				 
+				</div>
+				<div class="form-group">
+				  <label for="pwd">Enter Mobile No:</label>
+				  <input type="text" class="form-control" id="mnumber" value="+44" name="Phone" required>
+				  
+				</div>
+				<div class="form-group">
+					 <label for="email">Email ID:</label>
+					 <input type="email" class="form-control" placeholder="Enter Email Id*" id="email" name="email" required>
+				 </div>
+				 
+				<button type="submit" id="submit" name="submit" class="btn yellow-btn btn-lg">Submit</button>
+		  </form>
+		
+	</div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+<!--<div class="modal fade in" id="myBtn"  role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">
+<span aria-hidden="true">×</span>
+<span class="sr-only">Close</span>
+</button>
+<h4 class="modal-title" id="myModalLabel">Get in Touch</h4>
+</div>
+
+<div class="modal-body modal-popup">
+<div id="new_entry">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<form role="form" action="https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads1756118000008782005" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return checkMandatory1756118000008782005()" accept-charset="UTF-8">
+
+<input type="text" style="display:none;" name="xnQsjsdp" value="cfbac6f3e182babf5c9036a44e56405d24137f8491d44e25cb7f9b5a935d6c9f">
+<input type="hidden" name="zc_gad" id="zc_gad" value="undefined">
+<input type="text" style="display:none;" name="xmIwtLD" value="270946cb3d3e2441aecf90fdfb7b79f2bceda915163a4482572bfab1f220372b">
+<input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
+<input type="text" style="display:none;" name="returnURL" value="www.touch2success.com/payment-terminal?=formsubmit">
+<div class="field">
+<input type="text" id="m_name" tabindex="5" name="Last Name" placeholder="Enter Your Name" maxlength="80" onkeydown="return alphaOnly(event);" required="">
+<label for="m_name">Enter Your Name<span>*</span></label>
+</div>
+<div class="field">
+<input type="text" tabindex="6" id="m_mobNo" pattern=".{13,14}" name="Phone" placeholder="Enter Mobile No" minlength="13" maxlength="14" value="+44" onkeydown="return numOnly(event);" required="">
+<label for="m_mobNo">Enter Mobile No<span>*</span></label>
+</div>
+<div class="field">
+<input type="email" tabindex="7" name="Email" id="m_email" placeholder="Enter email" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required="">
+<label for="m_email">Enter Email Id<span>*</span></label>
+</div>
+
+<input type="hidden" name="Lead Source" id="lead_source" value="website_organic">
+<button type="submit" class="btn center-block submit" tabindex="8" onfocus="document.getElementById('m_name').focus()">Submit</button>
+</form>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>-->
+
+<section>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<a href="#" class="header-logo wow  bounceIn navbar-barand animated" style="animation-duration: 0.5s; visibility: visible; animation-name: bounceIn;"><img src="https://www.touch2success.com/landing/pdq/img/logo.png" alt="logo"></a>
+</div>
+<div class="nav navbar-inver navbar-right">
+<div class="mobile-nav">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav" id="top-menu">
+<li class="#"><a href="#home" class="scroll-link">Home</a></li>
+<li><a href="#features" class="scroll-link">Features</a></li>
+<li><a href="#what-you-get" class="scroll-link">Pricing</a></li>
+<li><a href="#contact-div" class="scroll-link">Help</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</section>
+
+<section>
+
+
+<div id="home" class="home cover-height">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-sm-12">
+<div class="text-vcenter">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+
+<div class="carousel-inner">
+<div class="item animated FadeIn wow active animated" style="visibility: visible;">
+
+<div class="banner-content-in">
+<h2 class="banner-in-content">Card Payments Simplified</h2>
+<div class="row">
+<div class="col-md-6">
+<!--<ul class="pdq-spec-list">
+<li>- 5” High-definition touchscreen</li>
+<li>- Contactless payment method</li>
+<li>- 4G/Wifi/Bluetooth connectivity</li>
+<li>- Long-lasting battery backup</li>
+</ul>-->
+</div>
+</div>
+<p>Our PDQ device provides a state-of-the-art technology to accept card payments with confidence.</p>
+<p>Our PDQ device comes with contactless feature that allows your customers speed and flexibility when they come to pay. The device helps you have shorter queues, happier customers and more payments.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+<div class="text-vcenter">
+<div class="col-md-12 text-left contact-form margTop30px">
+
+<h2 class="text-center">Get in Touch!</h2>
+<h4 class="text-center">Want to find out more about our PDQ devices? Send us your details.</h4>
+<hr>
+<form action="https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads1756118000052398039" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return checkMandatory1756118000052398039()" accept-charset="UTF-8">
+
+<input type="text" style="display:none;" name="xnQsjsdp" value="cfbac6f3e182babf5c9036a44e56405d24137f8491d44e25cb7f9b5a935d6c9f">
+<input type="hidden" name="zc_gad" id="zc_gad" value="undefined">
+<input type="text" style="display:none;" name="xmIwtLD" value="270946cb3d3e2441aecf90fdfb7b79f26a860875deeb1869485b5ae6a57bfe14">
+<input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
+<input type="text" style="display:none;" name="returnURL" value="http://www.touch2success.com/sem/thank-you">
+<div class="form-group">
+<label for="name">Name *:</label>
+<input type="name" class="form-control" id="name" maxlength="80" name="Last Name" placeholder="Touch2Success" required="true">
+</div>
+<div class="form-group">
+<label for="mobile">Contact Number *:</label>
+<input type="text" class="form-control" id="mobile" minlength="13" maxlength="14" name="Phone" value="+44" placeholder="020 300 20 731(Numbers Only)" required="true">
+</div>
+<div class="form-group">
+<label for="email">Email *:</label>
+<input type="email" class="form-control" id="email" maxlength="100" name="Email" placeholder="sales@touch2success.com" required="true">
+</div>
+<div class="form-group" style="display:none;">
+<select style="width:250px;" name="Lead Source" class="id_100">
+<option value="-None-">-None-</option>
+<option value="A2Z Media">A2Z Media</option>
+<option value="Adwords">Adwords</option>
+<option value="Chef Online">Chef Online</option>
+<option value="Cold Call">Cold Call</option>
+<option value="Email">Email</option>
+<option value="EPOS Chinese">EPOS Chinese</option>
+<option value="Facebook">Facebook</option>
+<option value="Field Sales">Field Sales</option>
+<option value="Foodhub Adwords">Foodhub Adwords</option>
+<option value="FoodHubCarlisle">FoodHubCarlisle</option>
+<option value="FoodHubStoke">FoodHubStoke</option>
+<option value="Graveyard">Graveyard</option>
+<option value="IB Rechurn,">IB Rechurn,</option>
+<option value="Inbound">Inbound</option>
+<option value="InHouse Data">InHouse Data</option>
+<option value="Kukd">Kukd</option>
+<option value="MS Leads">MS Leads</option>
+<option value="New Leads">New Leads</option>
+<option value="Old Data">Old Data</option>
+<option value="Order YoYo">Order YoYo</option>
+<option selected="" value="PDQ_Adwords">PDQ_Adwords</option>
+<option value="Pilot">Pilot</option>
+<option value="Red List">Red List</option>
+<option value="Refer A Friend">Refer A Friend</option>
+<option value="Referral">Referral</option>
+<option value="Site Visit">Site Visit</option>
+<option value="Stoke VIsit">Stoke VIsit</option>
+<option value="Visionsoft">Visionsoft</option>
+<option value="VisionSoft_AdWords">VisionSoft_AdWords</option>
+<option value="Visionsoft_Facebook">Visionsoft_Facebook</option>
+<option value="VisionSoft_Organic">VisionSoft_Organic</option>
+<option value="Web Search – Post Codes">Web Search – Post Codes</option>
+<option value="Website_Organic">Website_Organic</option>
+<option value="Whitepaper1">Whitepaper1</option>
+<option value="Word of Mouth">Word of Mouth</option>
+<option value="ZPos">ZPos</option>
+</select>
+</div>
+
+<div class="alert alert-danger fade in" id="errorMessageDiv" style="display:none;">
+<a href="#" class="close" data-dismiss="alert">×</a>
+Please, fill the form.
+</div>
+<button type="submit" id="submit" name="submit" class="btn yellow-btn btn-lg">Get a callback</button>
+</form>
+
+
+<script type="text/javascript">
+  var form = document.getElementById('formID'); // form has to have ID: <form id="formID">
+
+form.addEventListener('submit', function(event) { // listen for form submitting
+        if (!event.target.checkValidity()) {
+            event.preventDefault(); // dismiss the default functionality
+            document.getElementById('errorMessageDiv').style.display = 'block';
+        }
+    }, false);
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  
+  $('#mobile').on('keypress, keydown', function(event) {
+           var $field = jQuery(this);
+
+            if ((event.which != 37 && (event.which != 39)) &&
+              ((this.selectionStart < 3) ||
+                ((this.selectionStart == 3) && (event.which == 8)))) {
+              return false;
+            }
+           });
+
+      var nameReg  = /^[A-Za-z ]+$/;
+      var numReg   = /^[0-9\+]+$/;
+      var emailReg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      //$("#hdnFlg").val("");
+      $( "#formID" ).submit(function( event ) {
+          $('.error').hide();
+          var firstname = $.trim($("#name").val());
+          var contact   = $.trim($("#mobile").val());
+          var email     = $.trim($("#email").val());
+        
+
+          if(firstname == ""){
+              $('#name').focus();
+              if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#name').after('<div class="error"> Please enter your name</div>');
+              event.preventDefault();
+          } 
+          else if(!nameReg.test(firstname)){
+              $('#name').focus();
+              if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#name').after('<div class="error"> only characters are allowed</div>');
+              event.preventDefault();
+          }
+          else if(contact == ""){
+              $('#mobile').focus();
+               if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#mobile').after('<div class="error"> Please enter your mobile number</div>');
+              event.preventDefault();
+          } 
+          
+          else if(contact.length < "10"){
+                $('#mobile').focus();
+                 if ($('.error').length) {
+                    $('.error').remove();
+                } 
+                
+                $('#mobile').after('<div class="error"> Mobile number should not be less than 10</div>');
+                event.preventDefault();
+              } 
+          
+          else if(!numReg.test(contact)){
+              $('#mobile').focus();
+               if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#mobile').after('<div class="error"> only numbers are allowed</div>');
+              event.preventDefault();
+          }
+          else if(email == ""){
+              $('#email').focus();
+               if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#email').after('<div class="error"> Please enter your email</div>');
+              event.preventDefault();
+          }
+          else if (!emailReg.test(email)){
+              $('#email').focus();
+              if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#email').after('<div class="error"> Please enter your valid email</div>');
+              event.preventDefault();
+          }
+      });        
+  });
+</script>
+<script type="text/javascript">
+   $(document).ready(function () {
+   if(window.location.href.indexOf("fb") > -1) {
+     $('.id_100 option[value=Facebook]').attr('selected','selected');
+    }
+    else if(window.location.href.indexOf("adw") > -1) {
+     $('.id_100 option[value=Adwords]').attr('selected','selected');
+    }
+  });
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+<section id="ImageSection" class="section ImageSection-section bg-lightgray">
+		<div class="container">
+			<div class="row">			
+			<div class="col-lg-12 col-md-12 col-sm-12">		
+				<div class="ImageSection-section-header col-lg-5 col-md-5 col-sm-12">
+					<div class="section-header-first">
+						<h2>How does it Work?</h2>						
+						<ul class="section-header-list-first">
+							<li>Tell us a few details about your business and payment needs</li>
+							<li>Compare your options with the help of our payment support team</li>
+							<li>Signup, confident you’re getting the best possible deal for your business</li>
+						</ul>
+						
+					</div>
+				</div>
+				
+				<div class="col-lg-7 col-md-7 col-sm-12">
+					<div class="video-container">
+						<div class="fluid-width-video-wrapper" style="padding-top: 50%;"><iframe src="https://www.youtube.com/embed/GIalL5fkhPM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="" id="fitvid0"></iframe></div>
+					</div>
+				</div>
+				
+			</div>
+			</div>
+		</div>
+</section>
+
+<section id="ImageSection" class="section ImageSection-section bg-lightgray">
+		<div class="container-fluid">
+			<div class="row">
+			<div class="ImgHeader col-lg-12 col-md-12 col-sm-12 text-center">
+				<h2>Why choose Us?</h2>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12">				
+				<div class="col-lg-7 col-md-7 col-sm-12">
+					<div class="ImageSection-container">
+						<div class="fluid-width-ImageSection-wrapper"><img src="https://public.touch2success.com/static/0d0814be56cd781a41eb4d95dddd8598/img/1582061983phpzDmeTi.png?lightbox[iframe]=true&lightbox[width]=800&lightbox[height]=600" class="img-responsive center-block"></div>
+					</div>
+				</div>
+				
+				<div class="ImageSection-section-header col-lg-5 col-md-5 col-sm-12">
+					<div class="section-header">
+						<h2>We are contactless</h2>
+						<p>The contactless feature in this device uses the technology that recognises electronic data without the customer's signature or personal identification number.</p>
+						<ul class="section-header-list">
+							<li>NFC Contactless</li>
+							<li>EMV Chipcard</li>
+							<li>Magnetic stripe reader</li>
+						</ul>
+						<a href="#" class="section-btns" onclick="titleModal('I am Interested');" data-toggle="modal" data-target="#myBtn">I am Interested</a>
+					</div>
+				</div>
+				
+			</div>
+			</div>
+		</div>
+</section>
+
+
+<section id="video" class="section video-section bg-lightgray">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="video-section-header col-lg-5 col-md-5 col-sm-12">
+					<div class="section-header">
+						<h2>All your money in one place</h2>
+						<p>Our PDQ device comes integrated with Datman. Therefore, every online transaction happens in one account.</p>
+						<ul class="section-header-list">
+							<li>Easy registration process</li>
+							<li>Highest data encryption</li>
+							<li>Easy refund process</li>
+						</ul>
+						<a href="#" class="section-btns" onclick="titleModal('I am Interested');" data-toggle="modal" data-target="#myBtn">I am Interested</a>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-12">
+					<div class="video-container">
+						<div class="fluid-width-video-wrapper" style="padding-top: 50%;"><iframe src="https://www.youtube.com/embed/GIalL5fkhPM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="" id="fitvid0"></iframe></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+</section>
+
+
+<section id="ImageSection1" class="section ImageSection-section bg-lightgray">
+		<div class="container-fluid">
+			<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">			
+				
+				<div class="ImageSection-section-header col-lg-6 col-md-6 col-sm-12">
+					<div class="section-header">
+						<h2>User-friendly</h2>
+						<p>The PDQ device is easy to use. From the installation to making your first transaction, the process is very simple.</p>
+						<ul class="section-header-list">
+							<li>Sleek, handheld design</li>
+							<li>5” High-Definition touch screen</li>
+							<li>Long-lasting battery backup</li>
+						</ul>
+						<a href="#" class="section-btns" onclick="titleModal('I am Interested');" data-toggle="modal" data-target="#myBtn">I am Interested</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="ImageSection-container">
+						<div class="fluid-width-ImageSection-wrapper"><img src="https://public.touch2success.com/static/0d0814be56cd781a41eb4d95dddd8598/img/1582061982php3i79An.png?lightbox[iframe]=true&lightbox[width]=800&lightbox[height]=600" class="img-responsive center-block"></div>
+					</div>
+				</div>
+				
+			</div>
+			</div>
+		</div>
+</section>
+
+<section id="video1" class="section video-section bg-lightgray">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+			
+				<div class="col-lg-7 col-md-7 col-sm-12">
+					<div class="video-container">
+						<div class="fluid-width-video-wrapper" style="padding-top: 50%;"><iframe src="https://www.youtube.com/embed/GIalL5fkhPM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="" id="fitvid0"></iframe></div>
+					</div>
+				</div>
+				
+				<div class="video-section-header col-lg-5 col-md-5 col-sm-12">
+					<div class="section-header">
+						<h2>Flexibility at its best</h2>
+						<p>The device offers multiple connectivity options and payment methods for quick customer transactions that heighten customer convenience standards.</p>
+						<ul class="section-header-list">
+							<li>4G/3G/Wireless/Bluetooth connectivity</li>
+							<li>Multiple payment methods</li>
+							<li>Unprecedented security</li>
+						</ul>
+						<a href="#" class="section-btns" onclick="titleModal('I am Interested');" data-toggle="modal" data-target="#myBtn">I am Interested</a>
+					</div>
+				</div>
+				
+			</div>
+			</div>
+		</div>
+</section>
+
+
+
+
+<section id="snippet" style="margin-top: 0%;">
+<div class="col-sm-12 col-xs-12">
+<div class="margin-snippet col-sm-3 col-xs-12">
+<h2>£ 122+ million</h2>
+<p>worth of sales processed<br>every year</p>
+</div>
+<div class="col-sm-3 col-xs-12">
+<h2>10+ million</h2>
+<p>transactions <br>annually</p>
+</div>
+<div class="col-sm-3 col-xs-12">
+<h2>10k</h2>
+<p>customers and <br>still counting</p>
+</div>
+</div>
+</section>
+
+<section id="Features">
+<div class="container">
+
+<!--<div class="row">
+<div class="Features-Section-Header col-lg-12 col-md-12 col-sm-12">
+<h4 class="text-center">Product Features</h4>
+</div>
+<div class="Features-Section col-lg-12 col-md-12 col-sm-12">
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-1.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-2.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-3-v1.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-4.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-5.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-6.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-7-v1.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-8-v1.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-6">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-10-v1.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+</div>
+</div>-->
+
+<div class="FeaturesContents col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+
+<div class="col-md-6 col-sm-12 col-sm-12">
+<div class="details-div-in">
+<img src="https://www.touch2success.com/landing/pdq/img/icon.png" alt="Quick, easy, flexible and safe transactions">
+<h4>Quick, flexible and safe Transactions</h4>
+<p>Contactless technology lets you process more payments in less time, and your customers get the speed and convenience they have always wanted.</p>
+</div>
+</div>
+<div class="col-md-6 col-sm-12 col-sm-12">
+<div class="details-div-in">
+<img src="https://www.touch2success.com/landing/pdq/img/icon-2.png" alt="Quick, easy, flexible and safe transactions">
+<h4>Multiple Connectivity Methods</h4>
+<p>The PDQ terminals can be configured to be used with 4G/3G, Wi-Fi and Bluetooth, as a means of back-up communication methods.</p>
+</div>
+</div>
+<div class="col-md-6 col-sm-12 col-sm-12">
+<div class="details-div-in">
+<img src="https://www.touch2success.com/landing/pdq/img/icon-3.png" alt="Quick, easy, flexible and safe transactions">
+<h4>Quick Set-up, Easy to Install</h4>
+<p>The PDQs can be self-installed and comes with an easy-to-follow instruction guide. In case you need assistance, our support team is just a call away.</p>
+</div>
+</div>
+<div class="col-md-6 col-sm-12 col-sm-12">
+<div class="details-div-in">
+<img src="https://www.touch2success.com/landing/pdq/img/icon-4.png" alt="Quick, easy, flexible and safe transactions">
+<h4>Compact and Portable</h4>
+<p>With its compact design and rich multimedia capabilities, these portable PDQ terminals are the best companion to support you in your business on the move.</p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</section>
+
+
+<!---Footer-->
+<Section id="footer-main">
+<div class="container res-fluid">
+		<div class="row">
+			<footer class="resp-footer footer cleafix" id="footer">
+				<div class="resp-footer-container container">
+
+					<div class="row">
+						<div class="resp-footer-first-col col-lg-2 col-md-3 col-sm-6 col-xs-12">
+							<ul class="resp-nav-first nav nav-pills nav-stacked">
+																	<li class="privacypolicy"><a href="/privacy-policy.php">Privacy Policy</a></li>
+                                    <li class="privacypolicy"><a href="/terms-of-use.php">Terms of use</a></li>
+																									<li class="termsconditions"><a href="/terms-and-conditions.php">Terms &amp; Condition</a></li>
+																
+			                		<script type="text/javascript">
+
+		    		                function facebook_op(httpHost)
+		            		        {
+		                    	    //var httpHost   = $("#httpHost").val();
+		                    	    var requestUri = $("#requestUri").val();
+		                        	javascript: window.open("http://www.facebook.com/share.php?u=http://"+httpHost+requestUri, "","status=0,toolbar=0, width=800,height=550");
+		                    		}
+		                    		function twitter_op(httpHost){
+
+			                        //var httpHost   = $("#httpHost").val();
+		    	                    //var requestUri = $("#requestUri").val();
+		        	                javascript: window.open ("http://twitter.com/share?url=http://"+httpHost+"&at_xt=4d06823ee8debfa5,0&text=check this out http://"+httpHost, "Check this out http://" +httpHost,"status=0,toolbar=0, width=700,height=450");
+		            		        }
+		            		        function facebook_validate(url){
+		            		         		url 		= url.replace('http://','');
+		            		         		url 		= url.replace('https://','');
+		            		         		url 		= url.replace('www.','');
+		            		         		valid_url 	= "https://www."+url;
+
+		            		         		javascript: window.open (valid_url,"", "status=0,toolbar=0, width=700,height=450");
+		            		        }
+		            		        function twitter_validate(url){
+                            url 		= url.replace('http://','');
+		           							url 		= url.replace('https://','');
+		           							url 		= url.replace('www.','');
+		           							valid_url 	= "https://www."+url;
+		           							javascript: window.open (valid_url,"", "status=0,toolbar=0, width=700,height=450");
+		            		        }
+
+		                			</script>
+		                		
+		                											<li class="twitter">
+																				<a href="#" onclick="twitter_op('saltandvinegarhelston.com');">Twitter</a>
+																			</li>
+																
+								<!-- <li><a href="/cookies.php">About Cookies</a></li> -->
+							</ul>
+						</div>
+						<div class="resp-footer-second-col col-lg-2 col-md-3 col-sm-6 col-xs-12">
+							<ul class="resp-nav-sec nav nav-pills nav-stacked">
+								<!--<li><a class='text-danger' onclick='window.open("../support/start.php?phone=01326565874", "myWindow","status = 0, height = 450, width = 465, resizable = 0");return false;' href='/support/start.php?phone=01326565874'>Live Chat</a></li>-->
+                                								<li class="allergy"><a href="/faq_allergy.php">Allergy Information</a></li>
+                                                                								<li class="facebook">
+																			<a href="#" onclick="facebook_op('saltandvinegarhelston.com');">Facebook</a>
+																	</li>
+																									<li class="unsubscribe"><a href="/unsubscribe_sms.php">Unsubscribe</a></li>
+																<!-- <li class="userVoice" id="userVoice"><a href="#">Post an idea</a></li> -->
+							</ul>
+						</div>
+
+																			                         <div class="displayhygiene">
+   					        <div class="resp-footer-third-col col-lg-4 col-md-3 col-sm-6 col-xs-12 rating"></div>
+					     </div>
+						<div class="resp-footer-third-col col-lg-2 col-md-2 col-sm-12 col-xs-12  text-center applinks appmargin">
+                                                                                        
+                                                                                        
+																		</div>
+											<div class="resp-footer-fourth-col floatRight visible-lg visible-md hidden-sm hidden-xs	  text-right textCenter">
+                                <div>
+																          <img src="https://public.touch2success.com/static/89ac32261e75b6007d589d85154d056e/img/payment.png" alt="" class="payment-image">
+							       								</div>
+								<div id="footerLogo">
+																    							    	<a href="http://foodhub.co.uk"><img class="footer-logo" src="https://public.touch2success.com/static/core/img/foodhub_footer_logo.png" alt="FOODHUB"></a>
+																    								</div>
+								</div>
+						</div>
+						<div class="resp-footer-fourth-col floatRight visible-xs hidden-md visible-sm	hidden-lg col-sm-12 col-xs-12  text-right textCenter">
+                                <div class="col-sm-6 col-xs-12">
+																          <img src="https://public.touch2success.com/static/89ac32261e75b6007d589d85154d056e/img/payment.png" alt="" class="payment-image">
+							       								</div>
+								<div id="footerLogo" class="col-sm-6 col-xs-12">
+															    	<a href="http://foodhub.co.uk"><img class="footer-logo" src="https://public.touch2success.com/static/core/img/foodhub_footer_logo.png" alt="FOODHUB"></a>
+							    								</div>
+								</div>
+						</div>
+
+
+
+
+					</footer></div>
+
+					<!-- <div class="row">
+						<div class="col-md-4 col-md-offset-8 text-right">
+							<p class="text-muted">&copy; 2020 Touch2Success</p>
+						</div>
+					</div> -->
+				</div>
+
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+
+<script type="text/javascript">
+  var form = document.getElementById('formID'); // form has to have ID: <form id="formID">
+
+form.addEventListener('submit', function(event) { // listen for form submitting
+        if (!event.target.checkValidity()) {
+            event.preventDefault(); // dismiss the default functionality
+            document.getElementById('errorMessageDiv').style.display = 'block';
+        }
+    }, false);
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  
+  $('#mobile').on('keypress, keydown', function(event) {
+           var $field = jQuery(this);
+
+            if ((event.which != 37 && (event.which != 39)) &&
+              ((this.selectionStart < 3) ||
+                ((this.selectionStart == 3) && (event.which == 8)))) {
+              return false;
+            }
+           });
+
+      var nameReg  = /^[A-Za-z ]+$/;
+      var numReg   = /^[0-9\+]+$/;
+      var emailReg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      //$("#hdnFlg").val("");
+      $( "#formID" ).submit(function( event ) {
+          $('.error').hide();
+          var firstname = $.trim($("#name").val());
+          var contact   = $.trim($("#mobile").val());
+          var email     = $.trim($("#email").val());
+        
+
+          if(firstname == ""){
+              $('#name').focus();
+              if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#name').after('<div class="error"> Please enter your name</div>');
+              event.preventDefault();
+          } 
+          else if(!nameReg.test(firstname)){
+              $('#name').focus();
+              if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#name').after('<div class="error"> only characters are allowed</div>');
+              event.preventDefault();
+          }
+          else if(contact == ""){
+              $('#mobile').focus();
+               if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#mobile').after('<div class="error"> Please enter your mobile number</div>');
+              event.preventDefault();
+          } 
+          
+          else if(contact.length < "10"){
+                $('#mobile').focus();
+                 if ($('.error').length) {
+                    $('.error').remove();
+                } 
+                
+                $('#mobile').after('<div class="error"> Mobile number should not be less than 10</div>');
+                event.preventDefault();
+              } 
+          
+          else if(!numReg.test(contact)){
+              $('#mobile').focus();
+               if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#mobile').after('<div class="error"> only numbers are allowed</div>');
+              event.preventDefault();
+          }
+          else if(email == ""){
+              $('#email').focus();
+               if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#email').after('<div class="error"> Please enter your email</div>');
+              event.preventDefault();
+          }
+          else if (!emailReg.test(email)){
+              $('#email').focus();
+              if ($('.error').length) {
+                  $('.error').remove();
+              } 
+              
+              $('#email').after('<div class="error"> Please enter your valid email</div>');
+              event.preventDefault();
+          }
+      });        
+  });
+</script>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
