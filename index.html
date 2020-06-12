@@ -4,6 +4,7 @@
   <title>PDQ's</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://www.touch2success.com/images/favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,6 +19,8 @@
 </head>
 
 <body>
+
+<div id="PDQSite">
 <!-- Trigger the modal with a button -->
 <button title="Get in Touch" data-toggle="modal" data-target="#myBtn" class="hidden-xs myBtnD" onclick="titleModal('Get in Touch');" style="display: block;">
 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -26,43 +29,7 @@
 
 
 
-<!-- Modal -->
-<div id="myBtn" class="modal fade" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h2 class="modal-title">GET IN TOUCH</h2>
-      </div>
-      <div class="modal-body">
-		
-			<form action="/action_page.php">
-				<div class="form-group">
-				  <label for="uname">Your Name:</label>
-				  <input type="text" class="form-control" id="uname" placeholder="Enter Your Name*" name="uname" required>
-				 
-				</div>
-				<div class="form-group">
-				  <label for="pwd">Enter Mobile No:</label>
-				  <input type="text" class="form-control" id="mnumber" value="+44" name="Phone" required>
-				  
-				</div>
-				<div class="form-group">
-					 <label for="email">Email ID:</label>
-					 <input type="email" class="form-control" placeholder="Enter Email Id*" id="email" name="email" required>
-				 </div>
-				 
-				<button type="submit" id="submit" name="submit" class="btn yellow-btn btn-lg">Submit</button>
-		  </form>
-		
-	</div>
-      
-    </div>
-
-  </div>
-</div>
 
 
 <!--<div class="modal fade in" id="myBtn"  role="dialog" aria-labelledby="myModalLabel">
@@ -111,7 +78,7 @@
 </div>
 </div>-->
 
-<section>
+<header>
 <nav class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 <div class="navbar-header">
@@ -128,18 +95,18 @@
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav" id="top-menu">
-<li class="#"><a href="#home" class="scroll-link">Home</a></li>
-<li><a href="#features" class="scroll-link">Features</a></li>
-<li><a href="#what-you-get" class="scroll-link">Pricing</a></li>
-<li><a href="#contact-div" class="scroll-link">Help</a></li>
+<li><a href="#Home" class="scroll-link">Home</a></li>
+<li><a href="#Features" class="scroll-link">Features</a></li>
+<li><a href="#Pricing" class="scroll-link">Pricing</a></li>
+<li><a href="#help" class="scroll-link">Help</a></li>
 </ul>
 </div>
 </div>
 </div>
 </nav>
-</section>
+</header>
 
-<section>
+<section id="Home">
 
 
 <div id="home" class="home cover-height">
@@ -376,8 +343,29 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 
 <section id="ImageSection" class="section ImageSection-section bg-lightgray">
 		<div class="container">
-			<div class="row">			
-			<div class="col-lg-12 col-md-12 col-sm-12">		
+			<div class="row">			  		
+				<div class="Home-section col-lg-12 col-md-12 col-sm-12 text-center">
+					<div class="Home-section-header">
+						<h2>How does it Work?</h2>
+					</div>
+				</div>
+				<div class="Home-section-content col-lg-12 col-md-12 col-sm-12">
+					<div class="col-md-4 col-sm-12">
+					<center><img src="https://www.touch2success.com/images/products_payment_1.png">
+					<p>Tell us a few details about your business and payment needs</p>
+					</center>
+					</div>
+					<div class="col-md-4 col-sm-12">
+					<center><img src="https://www.touch2success.com/images/products_payment_2.png">
+					<p>Compare your options with the help of our payment support team</p>
+					</center>
+					</div>
+					<div class="col-md-4 col-sm-12">
+					<center><img src="https://www.touch2success.com/images/products_payment_3.png">
+					<p>Signup, confident you’re getting the best possible deal for your business</p>
+					</center>
+					</div>
+			<!--<div class="col-lg-12 col-md-12 col-sm-12">		
 				<div class="ImageSection-section-header col-lg-5 col-md-5 col-sm-12">
 					<div class="section-header-first">
 						<h2>How does it Work?</h2>						
@@ -396,8 +384,9 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 					</div>
 				</div>
 				
+			</div>-->
 			</div>
-			</div>
+		</div>
 		</div>
 </section>
 
@@ -522,117 +511,250 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 
 
 <section id="snippet" style="margin-top: 0%;">
-<div class="col-sm-12 col-xs-12">
-<div class="margin-snippet col-sm-3 col-xs-12">
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<div class="col-md-4 col-sm-12">
 <h2>£ 122+ million</h2>
 <p>worth of sales processed<br>every year</p>
 </div>
-<div class="col-sm-3 col-xs-12">
+<div class="col-md-4 col-sm-12">
 <h2>10+ million</h2>
 <p>transactions <br>annually</p>
 </div>
-<div class="col-sm-3 col-xs-12">
+<div class="col-md-4 col-sm-12">
 <h2>10k</h2>
 <p>customers and <br>still counting</p>
 </div>
 </div>
+</div>
+</div>
 </section>
+
 
 <section id="Features">
 <div class="container">
 
-<!--<div class="row">
-<div class="Features-Section-Header col-lg-12 col-md-12 col-sm-12">
-<h4 class="text-center">Product Features</h4>
-</div>
-<div class="Features-Section col-lg-12 col-md-12 col-sm-12">
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-1.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-2.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-3-v1.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-4.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-5.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-6.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-7-v1.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-8-v1.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-<div class="col-md-4 col-sm-6">
-<center><img src="https://www.touch2success.com/images/payment-list-ic-10-v1.png">
-<p><b>Simple billing structure</b></p>
-</center>
-</div>
-</div>
-</div>-->
+	<div class="Features-Section-Header col-lg-12 col-md-12 col-sm-12">
+		<h4 class="text-center">Product Features</h4>
+	</div>
+	<div class="row">
+	<div class="FeaturesContents col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
 
-<div class="FeaturesContents col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-
-<div class="col-md-6 col-sm-12 col-sm-12">
-<div class="details-div-in">
-<img src="https://www.touch2success.com/landing/pdq/img/icon.png" alt="Quick, easy, flexible and safe transactions">
-<h4>Quick, flexible and safe Transactions</h4>
-<p>Contactless technology lets you process more payments in less time, and your customers get the speed and convenience they have always wanted.</p>
-</div>
-</div>
-<div class="col-md-6 col-sm-12 col-sm-12">
-<div class="details-div-in">
-<img src="https://www.touch2success.com/landing/pdq/img/icon-2.png" alt="Quick, easy, flexible and safe transactions">
-<h4>Multiple Connectivity Methods</h4>
-<p>The PDQ terminals can be configured to be used with 4G/3G, Wi-Fi and Bluetooth, as a means of back-up communication methods.</p>
-</div>
-</div>
-<div class="col-md-6 col-sm-12 col-sm-12">
-<div class="details-div-in">
-<img src="https://www.touch2success.com/landing/pdq/img/icon-3.png" alt="Quick, easy, flexible and safe transactions">
-<h4>Quick Set-up, Easy to Install</h4>
-<p>The PDQs can be self-installed and comes with an easy-to-follow instruction guide. In case you need assistance, our support team is just a call away.</p>
-</div>
-</div>
-<div class="col-md-6 col-sm-12 col-sm-12">
-<div class="details-div-in">
-<img src="https://www.touch2success.com/landing/pdq/img/icon-4.png" alt="Quick, easy, flexible and safe transactions">
-<h4>Compact and Portable</h4>
-<p>With its compact design and rich multimedia capabilities, these portable PDQ terminals are the best companion to support you in your business on the move.</p>
-</div>
-</div>
-</div>
-
+		<div class="col-md-6 col-sm-12 col-sm-12">
+		<div class="details-div-in">
+		<img src="https://www.touch2success.com/landing/pdq/img/icon.png" alt="Quick, easy, flexible and safe transactions">
+		<h4>Quick, flexible and safe Transactions</h4>
+		<p>Contactless technology lets you process more payments in less time, and your customers get the speed and convenience they have always wanted.</p>
+		</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-sm-12">
+		<div class="details-div-in">
+		<img src="https://www.touch2success.com/landing/pdq/img/icon-2.png" alt="Quick, easy, flexible and safe transactions">
+		<h4>Multiple Connectivity Methods</h4>
+		<p>The PDQ terminals can be configured to be used with 4G/3G, Wi-Fi and Bluetooth, as a means of back-up communication methods.</p>
+		</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-sm-12">
+		<div class="details-div-in">
+		<img src="https://www.touch2success.com/landing/pdq/img/icon-3.png" alt="Quick, easy, flexible and safe transactions">
+		<h4>Quick Set-up, Easy to Install</h4>
+		<p>The PDQs can be self-installed and comes with an easy-to-follow instruction guide. In case you need assistance, our support team is just a call away.</p>
+		</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-sm-12">
+		<div class="details-div-in">
+		<img src="https://www.touch2success.com/landing/pdq/img/icon-4.png" alt="Quick, easy, flexible and safe transactions">
+		<h4>Compact and Portable</h4>
+		<p>Compact design and rich multimedia capabilities, these portable PDQ terminals are the best companion to support in your business on the move.</p>
+		</div>
+		</div>
+	</div>
+	</div>
 
 
 </div>
 </section>
 
 
+<section id="Pricing">
+<div class="container">
+<div class="row">
+<div class="Pricing-Section-Header col-lg-12 col-md-12 col-sm-12">
+<h4 class="text-center">Simple Pricing, No Hidden Charges</h4>
+</div>
+<div class="Pricing-Section col-lg-12 col-md-12 col-sm-12">
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-1.png">
+<p><b>Simple billing structure</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-2.png">
+<p><b>Zero monthly rental</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-3-v1.png">
+<p><b>Wired and wireless terminals</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-4.png">
+<p><b>Universal rate for all cards</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-5.png">
+<p><b>Pay only for what you earn (1.75%)</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-6.png">
+<p><b>No refund charges</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-7-v1.png">
+<p><b>Reliable, secure & cost-effective</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-8-v1.png">
+<p><b>Get paid on time, every time</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/images/payment-list-ic-10-v1.png">
+<p><b>No terminal fees</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/landing/pdq/img/payment-list-ic-11.png">
+<p><b>Zero statement fees</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/landing/pdq/img/payment-list-ic-12.png">
+<p><b>Zero authorisation charges</b></p>
+</center>
+</div>
+<div class="col-md-4 col-sm-12">
+<center><img src="https://www.touch2success.com/landing/pdq/img/payment-list-ic-14.png">
+<p><b>No PCI compliance charges</b></p>
+</center>
+</div>
+
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="help">
+<div id="contact-div" class="pad-section">
+<div class="container">
+<div class="contact wthree" id="contact">
+<div class="container">
+<div class="contact-main">
+<div class="contact-top">
+<h2 class="text-yellow">Contact Us</h2>
+</div>
+<div class="contact-bottom">
+<div class="row">
+<div class="col-md-6">
+<div class="contact-left agileinfo wow bounceInLeft  animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceInLeft;">
+<form action="https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads1756118000052398039" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return checkMandatory1756118000052398039()" accept-charset="UTF-8">
+
+<input type="text" style="display:none;" name="xnQsjsdp" value="cfbac6f3e182babf5c9036a44e56405d24137f8491d44e25cb7f9b5a935d6c9f">
+<input type="hidden" name="zc_gad" id="zc_gad" value="undefined">
+<input type="text" style="display:none;" name="xmIwtLD" value="270946cb3d3e2441aecf90fdfb7b79f26a860875deeb1869485b5ae6a57bfe14">
+<input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
+<input type="text" style="display:none;" name="returnURL" value="http://www.touch2success.com/sem/thank-you">
+<div class="form-group" style="text-align:left">
+<label for="name">Name *:</label>
+<input type="name" class="form-control" id="name" maxlength="80" name="Last Name" placeholder="John" required="true">
+</div>
+<div class="form-group" style="text-align:left">
+<label for="mobile">Contact Number *:</label>
+<input type="text" class="form-control" id="mobile" minlength="10" maxlength="20" name="Phone" value="+44" placeholder="020 300 20 731(Numbers Only)" required="true">
+</div>
+<div class="form-group" style="text-align:left">
+<label for="email">Email *:</label>
+<input type="email" class="form-control" id="email" maxlength="100" name="Email" placeholder="john@email.co.uk" required="true">
+</div>
+<div class="form-group">
+<select style="width:250px; display:none;" name="Lead Source" class="id_100">
+<option value="-None-">-None-</option>
+<option value="A2Z Media">A2Z Media</option>
+<option value="Adwords">Adwords</option>
+<option value="Chef Online">Chef Online</option>
+<option value="Cold Call">Cold Call</option>
+<option value="Email">Email</option>
+<option value="EPOS Chinese">EPOS Chinese</option>
+<option value="Facebook">Facebook</option>
+<option value="Field Sales">Field Sales</option>
+<option value="Foodhub Adwords">Foodhub Adwords</option>
+<option value="FoodHubCarlisle">FoodHubCarlisle</option>
+<option value="FoodHubStoke">FoodHubStoke</option>
+<option value="Graveyard">Graveyard</option>
+<option value="IB Rechurn,">IB Rechurn,</option>
+<option value="Inbound">Inbound</option>
+<option value="InHouse Data">InHouse Data</option>
+<option value="Kukd">Kukd</option>
+<option value="MS Leads">MS Leads</option>
+<option value="New Leads">New Leads</option>
+<option value="Old Data">Old Data</option>
+<option value="Order YoYo">Order YoYo</option>
+<option selected="" value="PDQ_Adwords">PDQ_Adwords</option>
+<option value="Pilot">Pilot</option>
+<option value="Red List">Red List</option>
+<option value="Refer A Friend">Refer A Friend</option>
+<option value="Referral">Referral</option>
+<option value="Site Visit">Site Visit</option>
+<option value="Stoke VIsit">Stoke VIsit</option>
+<option value="Visionsoft">Visionsoft</option>
+<option value="VisionSoft_AdWords">VisionSoft_AdWords</option>
+<option value="Visionsoft_Facebook">Visionsoft_Facebook</option>
+<option value="VisionSoft_Organic">VisionSoft_Organic</option>
+<option value="Web Search – Post Codes">Web Search – Post Codes</option>
+<option value="Website_Organic">Website_Organic</option>
+<option value="Whitepaper1">Whitepaper1</option>
+<option value="Word of Mouth">Word of Mouth</option>
+<option value="ZPos">ZPos</option>
+</select>
+</div>
+<div class="alert alert-danger fade in" id="errorMessageDiv" style="display:none;">
+<a href="#" class="close" data-dismiss="alert">×</a>
+Please, fill the form.
+</div>
+<button type="submit" id="submit-Contact" name="submit" class="btn yellow-btn btn-lg float-left">Get Quotes</button>
+</form>
+</div>
+</div>
+<div class="col-md-6">
+<div class="contact-right agileinfo wow bounceInRight  animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight;">
+<div class="contact-rit-info wthree">
+<h2 class="text-yellow">Address</h2>
+<p>Genesis Centre, Innovation Way,</p>
+<p>Stoke-on-Trent, ST6 4BF</p>
+<p>Phone: 01782 98 33 92</p>
+<p>Email: <a href="mailto:pdq@touch2success.com" class="text-yellow">pdq@touch2success.com</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
 <!---Footer-->
+<footer>
 <Section id="footer-main">
 <div class="container res-fluid">
 		<div class="row">
@@ -640,7 +762,7 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 				<div class="resp-footer-container container">
 
 					<div class="row">
-						<div class="resp-footer-first-col col-lg-2 col-md-3 col-sm-6 col-xs-12">
+						<div class="resp-footer-first-col col-lg-2 col-md-3 col-sm-12 col-xs-12">
 							<ul class="resp-nav-first nav nav-pills nav-stacked">
 																	<li class="privacypolicy"><a href="/privacy-policy.php">Privacy Policy</a></li>
                                     <li class="privacypolicy"><a href="/terms-of-use.php">Terms of use</a></li>
@@ -685,7 +807,7 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 								<!-- <li><a href="/cookies.php">About Cookies</a></li> -->
 							</ul>
 						</div>
-						<div class="resp-footer-second-col col-lg-2 col-md-3 col-sm-6 col-xs-12">
+						<div class="resp-footer-second-col col-lg-2 col-md-3 col-sm-12 col-xs-12">
 							<ul class="resp-nav-sec nav nav-pills nav-stacked">
 								<!--<li><a class='text-danger' onclick='window.open("../support/start.php?phone=01326565874", "myWindow","status = 0, height = 450, width = 465, resizable = 0");return false;' href='/support/start.php?phone=01326565874'>Live Chat</a></li>-->
                                 								<li class="allergy"><a href="/faq_allergy.php">Allergy Information</a></li>
@@ -698,7 +820,7 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 						</div>
 
 																			                         <div class="displayhygiene">
-   					        <div class="resp-footer-third-col col-lg-4 col-md-3 col-sm-6 col-xs-12 rating"></div>
+   					        <div class="resp-footer-third-col col-lg-4 col-md-3 col-sm-12 col-xs-12 rating"></div>
 					     </div>
 						<div class="resp-footer-third-col col-lg-2 col-md-2 col-sm-12 col-xs-12  text-center applinks appmargin">
                                                                                         
@@ -714,10 +836,10 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 								</div>
 						</div>
 						<div class="resp-footer-fourth-col floatRight visible-xs hidden-md visible-sm	hidden-lg col-sm-12 col-xs-12  text-right textCenter">
-                                <div class="col-sm-6 col-xs-12">
+                                <div class="col-sm-12 col-xs-12">
 																          <img src="https://public.touch2success.com/static/89ac32261e75b6007d589d85154d056e/img/payment.png" alt="" class="payment-image">
 							       								</div>
-								<div id="footerLogo" class="col-sm-6 col-xs-12">
+								<div id="footerLogo" class="col-sm-12 col-xs-12">
 															    	<a href="http://foodhub.co.uk"><img class="footer-logo" src="https://public.touch2success.com/static/core/img/foodhub_footer_logo.png" alt="FOODHUB"></a>
 							    								</div>
 								</div>
@@ -734,7 +856,8 @@ form.addEventListener('submit', function(event) { // listen for form submitting
 						</div>
 					</div> -->
 				</div>
-
+	</section>
+</footer>
 
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
